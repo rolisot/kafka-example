@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <UserSecretsId>dotnet-Kafka.Consumer.Handler-8D51082C-B374-441C-8901-2057F9E7B160</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Confluent.Kafka" Version="1.3.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="3.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Kafka.Domain\Kafka.Domain.csproj" />
+    <ProjectReference Include="..\Kafka.Infra\Kafka.Infra.csproj" />
+    <ProjectReference Include="..\Kafka.Application\Kafka.Application.csproj" />
+  </ItemGroup>
+</Project>
